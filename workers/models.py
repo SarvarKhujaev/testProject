@@ -17,10 +17,9 @@ class Employee(models.Model):
         null=False,
     )
 
-    birth_date: timezone = models.DateTimeField(
-        validators=[check_date],
-        auto_now=True,
-        editable=False,
+    birth_date = models.DateField(
+        blank=False,
+        null=False,
     )
 
     class Meta:
