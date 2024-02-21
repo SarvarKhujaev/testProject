@@ -1,7 +1,7 @@
 from django.db import models
 
-from .constants.default_values import DefaultValues
 from .inspectors.data_validate_inspector import *
+from .constants.default_values import DefaultValues
 
 
 class Employee(models.Model):
